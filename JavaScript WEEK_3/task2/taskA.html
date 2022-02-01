@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function add()
+        {
+            var val1 = parseInt(document.getElementById("box1").value);
+
+            var val2 = parseInt(document.getElementById("box2").value);
+            var val3 = parseInt(document.getElementById("box3").value);
+
+            var si = val1 * val2* val3/100;
+
+            document.getElementById("ans").innerHTML ="Simple Interest:->  "+val1+" "+val2+" "+val3+ " is "+si;
+        }
+    </script>
+    <style>
+        .in1{
+            align-items: center;
+            text-align: center;
+        }
+        .btn{
+             color: aqua;
+             height: 50px;
+             width: 100;
+             background-color: coral;
+
+        }
+    </style>
+</head>
+<body>
+     <h1>Simple Interest Formula:-></h1>
+     <h2>Where,</h2></body></html>
+     <h4>P- Principle</h4>
+     <h4>R- Rate</h4>
+     <h4>T- Time</h4>
+    <form>
+        <input class="in1" type="text" placeholder="Enter P" id="box1"/><br /><br />
+
+        <input class="in1"  type="text" placeholder="Enter R" id="box2"/><br /><br />
+
+        <input class="in1"  type="text" placeholder="Enter T" id="box3"/><br /><br />
+
+        <input  class="btn"  type="button" value="Calculate" onClick="add()"/><br /><br />
+
+        <h2 id="ans"> </h2>
+    </form>
+     
+</body>
+</html>
